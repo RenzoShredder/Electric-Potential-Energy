@@ -6,7 +6,7 @@
 \usepackage[english]{babel}
 \usepackage{color}
 \usepackage{amsmath}
-\usepackage{apacite}
+\usepackage{url}
 
 \definecolor{nerfgreen}{cmyk}{0.68,0,0.94,0.11} 
 \definecolor{maroon1}{cmyk}{0,0.8,0.3,0}    
@@ -19,11 +19,38 @@
 \begin{document}
 \maketitle
 %---------------------
-\section*{Review of Gravitational Potential Energy}
+\section*{Potential Energy Review}
+\subsection*{Gravitational potential energy}
+\textbf{Gravitational potential energy} $U_g$ is due to the gravitational field associated with a mass. In the absence of any other forces, an object with positive gravitational potential energy will accelerate towards a state of zero potential energy. For example, by the time a falling object lands on Earth's surface (i.e., reaches a zero potential energy state), all of its gravitational potential energy will have been converted into kinetic energy. 
+\subsection*{General definition}
+In general, we define \textbf{potenital energy} as the energy being stored in an object, due to that objects situation. In other words, potential energy can be thought of a notional energy that an oject has by virtue of its position.
 
+Let's assume an object in a state of positive potential energy must have had work done on it (i.e., had energy put into it). In this context, \textit{gravitational} potential energy can be thought as the work neccessary to move an object with mass $m$ from (e.g., the Earth's) surface to a height $h$.
+\begin{itemize}
+    \item Recall: that general definition for the work done on an object by some force $\vec{F}$ over a distance $\vec{d}$ is \begin{equation}
+        W = \vec{F} \cdot \vec{d}
+    \end{equation}
+    \item For the secenario described above, $\vec{F} \parallel \vec{d}$ and the magnitudes of the force and distance vectors are respectively defined as $|\vec{F}|=F_g \,$ and $|\vec{d}|=h$.
+    \begin{itemize}
+        \item Thus, it follows that the work done on our object to put it in a state of positive (gravitational) potential energy can be written as \begin{equation} W=F_g h = U_g \end{equation} 
+        \item Note: Initially, we have to apply a force with a magnitude slightly greater than $F_g$ to accelerate our mass to some (upwards) velocity
+    \end{itemize}
+\end{itemize}
+Importantly, an object's potential energy is always defined relative to some other reference point. Generally, we consider the change in potential energy over some distance. For example, in the scenario described above, we defined $\vec{F}_g$ as the gravitational force relative to the Earth's surface. Thus, the gravitational potential energy $U_g$ of our object at height $h$ is relative to the Earth's surface. 
 %---------------------
-\bibliographystyle{apacite}
-\bibliography{electric_field} 
-\nocite{*}
+\section*{Intro to Electric Potential Energy}
+Gravitational potential energy and electrical potential energy are fundamentally the same thing, they just have different sources of their field. 
+\begin{itemize}
+    \item Note: like graviational fields, an important property of electric fields is they are \textit{dynamic} phenomena
+\end{itemize}
+
+Recall: In the earlier videos (\cite{infinite_plate_1}, \cite{infinite_plate_2}) we proved that an infinite, uniformilly charged plate with charge density $\sigma \, [\mathrm{C/m^2}]$ generates a constant electric field $\vec{E}_{\mathrm{plate}}$ (regardless of how high above our point of interest is from the plate) with a magnitude
+    \begin{equation}
+        E_{plate} = |\vec{E}_{\mathrm{plate}}| = 2\pi k\sigma \quad  [\mathrm{N/C}]
+    \end{equation}
+TBC
+%---------------------
+\bibliographystyle{IEEEtran}
+\bibliography{mybib.bib} 
 %---------------------
 \end{document}
